@@ -1,7 +1,8 @@
-package com.springcloud.example;
+package com.springcloud.example.test;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;

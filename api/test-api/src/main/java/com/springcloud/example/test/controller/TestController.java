@@ -1,6 +1,7 @@
-package com.springcloud.example.controller;
+package com.springcloud.example.test.controller;
 
 
+import com.springcloud.example.test.dto.TestDto;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
