@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: test-api
+
+server:
+  port: 8001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    status-page-url-path: /swagger-ui.html
+logging:
+  level:
+      root: info
+  file: logs/test-api.log
