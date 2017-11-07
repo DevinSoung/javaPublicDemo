@@ -1,9 +1,9 @@
 spring:
   application:
-    name: test-api
+    name: user-api
 
 server:
-  port: 8011
+  port: 8012
 eureka:
   client:
     serviceUrl:
@@ -13,4 +13,4 @@ eureka:
 logging:
   level:
       root: info
-  file: logs/test-api.log
+  file: logs/user-api.log

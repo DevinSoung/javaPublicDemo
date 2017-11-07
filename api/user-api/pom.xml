@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springcloud.example</groupId>
-	<artifactId>test-api</artifactId>
+	<artifactId>user-api</artifactId>
 	<version>1.0.0</version>
     <packaging>jar</packaging>
 
-	<name>test-api</name>
+	<name>user-api</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -17,15 +17,6 @@
 		<version>1.0.0</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
-
-	<dependencies>
-		<dependency>
-			<groupId>com.springcloud.example</groupId>
-			<artifactId>test-dto</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
-	</dependencies>
 
 	<build>
 		<plugins>
