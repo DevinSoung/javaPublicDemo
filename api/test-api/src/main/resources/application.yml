@@ -1,6 +1,6 @@
 spring:
   application:
-    name: test-api
+    name: test-api-V1.0
   cloud:
     config:
       profile: app
