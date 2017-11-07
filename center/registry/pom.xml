@@ -17,4 +17,18 @@
 		<version>1.0.0</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
+
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
