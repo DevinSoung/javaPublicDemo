@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DevinSoung/javaPublicDemo.git
+          username: 1298795091@qq.com
+          password: 1298795091@qq.com
+          search-paths: properties
+server:
+  port: 8002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://120.55.41.124:8000/eureka/
+logging:
+  level:
+      root: info
+  file: logs/config.log
