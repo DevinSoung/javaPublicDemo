@@ -1,9 +1,15 @@
-spring:
-  application:
-    name: user-api
-
 server:
   port: 8012
+spring:
+  application:
+    name: user-api-V1.0
+  cloud:
+    config:
+      profile: app
+      discovery:
+        enabled: true
+        service-id: config
+      label: develop
 eureka:
   client:
     serviceUrl:

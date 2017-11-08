@@ -11,10 +11,15 @@ spring:
           search-paths: properties
 server:
   port: 8002
+
 eureka:
   client:
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://120.55.41.124:8000/eureka/
+  instance:
+    prefer-ip-address: true
 logging:
   level:
       root: info

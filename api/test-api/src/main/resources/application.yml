@@ -1,3 +1,5 @@
+server:
+  port: 8011
 spring:
   application:
     name: test-api-V1.0
@@ -9,8 +11,6 @@ spring:
         service-id: config
       label: develop
 
-server:
-  port: 8011
 eureka:
   client:
     serviceUrl:
