@@ -10,7 +10,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 
 @EnableConfigServer
-@EnableEurekaClient
 @SpringBootApplication
 public class ConfigApplication {
 
