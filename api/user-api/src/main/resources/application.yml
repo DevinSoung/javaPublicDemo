@@ -2,7 +2,7 @@ server:
   port: 8012
 spring:
   application:
-    name: user-api-V1.0
+    name: user-api-V1-0
   cloud:
     config:
       profile: app
@@ -13,7 +13,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.1.11.62:8000/eureka/
+      defaultZone: http://120.55.41.124:8000/eureka/
   instance:
     status-page-url-path: /swagger-ui.html
 logging:
