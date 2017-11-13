@@ -21,6 +21,7 @@ eureka:
       defaultZone: http://120.55.41.124:8000/eureka/
   instance:
     prefer-ip-address: true
+    ip-address: 120.55.41.124
 logging:
   level:
       root: info

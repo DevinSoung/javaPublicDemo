@@ -3,14 +3,6 @@ server:
 spring:
   application:
     name: test-api-V1-0
-  cloud:
-    config:
-      profile: app
-      discovery:
-        enabled: true
-        service-id: config
-      label: develop
-
 eureka:
   client:
     serviceUrl:
