@@ -18,7 +18,7 @@ eureka:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: http://127.0.0.1:8000//eureka/
+      defaultZone: http://120.55.41.124:8000/eureka/
   instance:
     prefer-ip-address: true
 logging:
