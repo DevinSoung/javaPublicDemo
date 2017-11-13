@@ -1,4 +1,4 @@
-package com.springcloud.example.test;
+package com.springcloud.example.user;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
