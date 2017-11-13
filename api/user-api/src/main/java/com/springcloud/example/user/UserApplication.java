@@ -1,14 +1,13 @@
-package com.springcloud.example.test;
+package com.springcloud.example.user;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
-@EnableEurekaClient
+@EnableDiscoveryClient
 @SpringBootApplication
 @EnableSwagger2
 public class UserApplication {

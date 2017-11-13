@@ -1,4 +1,4 @@
-package com.springcloud.example.test.controller;
+package com.springcloud.example.user.controller;
 
 
 import io.swagger.annotations.Api;
