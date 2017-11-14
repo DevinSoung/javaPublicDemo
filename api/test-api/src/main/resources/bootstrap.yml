@@ -2,7 +2,14 @@ server:
   port: 8011
 spring:
   application:
-    name: test-api-V1-0
+    name: test-api-v1-0
+  cloud:
+    config:
+      profile: app
+      discovery:
+        enabled: true
+        service-id: config
+      label: dev
 eureka:
   client:
     serviceUrl:
