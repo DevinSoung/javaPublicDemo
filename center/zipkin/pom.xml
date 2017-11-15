@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springcloud.example</groupId>
-	<artifactId>test-api</artifactId>
+	<artifactId>zipkin</artifactId>
 	<version>1.0.0</version>
-    <packaging>jar</packaging>
+	<packaging>jar</packaging>
 
-	<name>test-api</name>
+	<name>zipkin</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -20,15 +20,16 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.springcloud.example</groupId>
-			<artifactId>test-dto</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-server</artifactId>
+			<version>2.3.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
+			<version>2.3.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -42,5 +43,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

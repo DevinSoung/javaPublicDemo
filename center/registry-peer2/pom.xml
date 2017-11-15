@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springcloud.example</groupId>
-	<artifactId>test-api</artifactId>
+	<artifactId>registry-peer2</artifactId>
 	<version>1.0.0</version>
-    <packaging>jar</packaging>
+	<packaging>jar</packaging>
 
-	<name>test-api</name>
+	<name>registry-peer2</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -18,18 +18,16 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
+
 	<dependencies>
 		<dependency>
-			<groupId>com.springcloud.example</groupId>
-			<artifactId>test-dto</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<version>1.3.5.RELEASE</version>
 		</dependency>
 
 	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -40,7 +38,7 @@
 					<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
 				</configuration>
 			</plugin>
-		</plugins>
-	</build>
+        </plugins>
 
+    </build>
 </project>

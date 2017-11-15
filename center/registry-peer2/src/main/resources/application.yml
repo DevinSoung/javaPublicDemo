@@ -1,9 +1,9 @@
 server:
-  port: 8000
+  port: 8001
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: peer2
     lease-expiration-duration-in-seconds: 30
     lease-renewal-interval-in-seconds: 10
   server:
@@ -13,7 +13,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://peer1:8000/eureka/
 logging:
   level:
       root: info

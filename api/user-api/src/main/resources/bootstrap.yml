@@ -1,8 +1,8 @@
 server:
-  port: 8011
+  port: 8012
 spring:
   application:
-    name: test-api-v1-0
+    name: user-api-v1-0
   zipkin:
     base-url: http://localhost:8004
   cloud:
@@ -11,7 +11,12 @@ spring:
       discovery:
         enabled: true
         service-id: config
-      label: master
+      label: dev
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: devin
+    password: 123456
 eureka:
   client:
     serviceUrl:
@@ -24,7 +29,4 @@ management:
 logging:
   level:
       root: info
-  file: logs/test-api.log
-
-
-
+  file: logs/user-api.log
