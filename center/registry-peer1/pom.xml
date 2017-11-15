@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springcloud.example</groupId>
-	<artifactId>registry</artifactId>
+	<artifactId>registry-peer1</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>registry</name>
+	<name>registry-peer1</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -38,6 +38,7 @@
 					<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
 				</configuration>
 			</plugin>
-		</plugins>
-	</build>
+        </plugins>
+
+    </build>
 </project>
