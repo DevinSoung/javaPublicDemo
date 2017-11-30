@@ -1,8 +1,8 @@
 spring:
   application:
-    name: zuul
+    name: dashboard
 server:
-  port: 9005
+  port: 9003
 eureka:
   client:
     healthcheck:
@@ -15,4 +15,4 @@ eureka:
 logging:
   level:
       root: info
-  file: logs/zuul.log
+  file: logs/dashboard.log

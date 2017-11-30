@@ -2,15 +2,16 @@ spring:
   application:
     name: zipkin
 server:
-  port: 8004
+  port: 9004
 eureka:
   client:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: http://peer1:8000/eureka/
+      defaultZone: http://10.1.16.32:9000/eureka/
   instance:
     prefer-ip-address: true
+    ip-address: 10.1.16.32
 logging:
   level:
       root: info

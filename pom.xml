@@ -51,31 +51,22 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-			<version>1.3.3.RELEASE</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
-			<version>1.3.5.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
-			<version>1.3.5.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
-			<version>1.3.5.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
-			<version>1.2.5.RELEASE</version>
 		</dependency>
 
 		<dependency>
@@ -109,11 +100,25 @@
 		<module>center/registry-peer1</module>
 		<module>center/registry-peer2</module>
 		<module>center/zuul</module>
+		<module>center/dashboard</module>
 		<module>center/zipkin</module>
 		<module>center/config</module>
 		<module>api/test-api</module>
 		<module>api/user-api</module>
 		<module>dto/test-dto</module>
 	</modules>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Brixton.SR6</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>

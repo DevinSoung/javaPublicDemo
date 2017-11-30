@@ -4,7 +4,7 @@ spring:
   application:
     name: user-api-v1-0
   zipkin:
-    base-url: http://localhost:8004
+    base-url: http://10.1.16.35:8004
   cloud:
     config:
       profile: app
@@ -12,15 +12,15 @@ spring:
         enabled: true
         service-id: config
       label: dev
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: devin
-    password: 123456
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: devin
+#    password: 123456
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://120.55.41.124:8000/eureka/
+    registerWithEureka: false
+    fetchRegistry: false
   instance:
     status-page-url-path: /swagger-ui.html
 management:
