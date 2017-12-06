@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 9001
 
 eureka:
   instance:
@@ -13,7 +13,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer1:8000/eureka/
+      defaultZone: http://peer1:9000/eureka/
 logging:
   level:
       root: info

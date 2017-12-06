@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by Devin on 2017/11/7.
  */
-@FeignClient(value = "user-api-V1-0",fallback = TestServiceHystrix.class)
+@FeignClient(value = "user-api-v1-0",fallback = TestServiceHystrix.class)
 public interface TestService {
 
     @RequestMapping(value = "/user/getUser",method = RequestMethod.POST)
