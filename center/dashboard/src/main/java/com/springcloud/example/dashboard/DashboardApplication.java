@@ -14,6 +14,6 @@ public class DashboardApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DashboardApplication.class, args);
-		logger.info("---------------------ZipkinApplication   启动成功-------------------->");
+		logger.info("---------------------DashboardApplication   启动成功-------------------->");
 	}
 }

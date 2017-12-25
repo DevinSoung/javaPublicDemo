@@ -23,6 +23,18 @@
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-server</artifactId>
 			<version>2.3.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.zipkin.java</groupId>
+					<artifactId>zipkin</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin</artifactId>
+			<version>2.3.0</version>
 		</dependency>
 
 		<dependency>
